@@ -1,10 +1,16 @@
-body {
-    background-color: aqua;
+* {
     box-sizing: border-box;
 }
 
-.playingField {
-    
+body {
+    background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playing-field {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +24,7 @@ body {
     height: 350px;
 }
 
-.gameCell {
+.game-cell {
     display: flex;
     background-color: rgba(223, 238, 246, 1);
     width: 100px;
@@ -27,16 +33,12 @@ body {
     border: 2px solid;
     align-items: center;
     justify-content: center;
-
-    
 }
-.resetButton {
-    display: flex;
+
+.reset-button {
+    display: table;
     margin: 0 auto;
-    width: 105px;
-    height: 28px;
+    padding: 5px 15px;
     border: 2px solid;
-    background-color: rgba(243, 179, 13, 1);
-    align-items: center;
-    justify-content: center;
+    background-color: #f3b30d;
 }

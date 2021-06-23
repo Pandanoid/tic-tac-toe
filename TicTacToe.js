@@ -7,13 +7,13 @@ const fieldState = [
 
 const imgX = createImage("X.png")
 const imgO = createImage("O.png")
-const fieldElement = document.querySelector('.playingField');
 let currentTurn = imgX;
-const gameCells = document.getElementsByClassName('gameCell');
+const fieldElement = document.querySelector('.playing-field');
+const gameCells = document.getElementsByClassName('game-cell');
 
 fieldElement.addEventListener('click', function (event) {
     const index = [...gameCells].indexOf(event.target);
-   
+
     if (index !== -1 && fieldState[index] === null) {
         fieldState[index] = currentTurn;
         event.target.appendChild(currentTurn.cloneNode());
