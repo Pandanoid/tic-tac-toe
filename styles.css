@@ -1,0 +1,42 @@
+body {
+    background-color: aqua;
+    box-sizing: border-box;
+}
+
+.playingField {
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px;
+    background-color: rgba(95, 29, 180, 1);
+    border: black solid 2px;
+    border-radius: 40px;
+    width: 350px;
+    height: 350px;
+}
+
+.gameCell {
+    display: flex;
+    background-color: rgba(223, 238, 246, 1);
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    border: 2px solid;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.resetButton {
+    display: flex;
+    margin: 0 auto;
+    width: 105px;
+    height: 28px;
+    border: 2px solid;
+    background-color: rgba(243, 179, 13, 1);
+    align-items: center;
+    justify-content: center;
+}
